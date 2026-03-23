@@ -90,3 +90,114 @@ footer {
     font-size: 28px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  background: #0d0f0f;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  height: 70px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('images/hero.png') center/cover no-repeat;
+}
+
+/* COMING */
+.coming {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.coming h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 120px 20px;
+}
+
+.card {
+  max-width: 420px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* BRANDING */
+.branding {
+  background: #0d0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.branding img {
+  width: 100px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  background: #fff;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .coming h1 {
+    font-size: 32px;
+  }
+
+  .info {
+    padding: 80px 20px;
+  }
+}
