@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+.header {
+  background: #0d0f0f;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  height: 60px;
+}
+
+.hero {
+  height: 80vh;
+  background: url('images/hero.png') center/cover no-repeat;
+}
+
+.coming {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.coming h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.card {
+  max-width: 400px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.branding {
+  background: #0d0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.branding img {
+  width: 80px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .coming h1 {
+    font-size: 28px;
+  }
+}
