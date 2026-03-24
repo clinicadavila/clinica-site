@@ -98,6 +98,10 @@ body {
   color: #b0b0b0;
   font-weight: 300;
 }
+.contact-card h2 {
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+}
 
 /* BRANDING */
 .branding {
