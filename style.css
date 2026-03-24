@@ -81,31 +81,53 @@ body {
 
 /* CONTACTOS */
 .contacts {
-  max-width: var(--max-width);
+  max-width: 1180px;
   margin: 0 auto;
   padding: 96px 24px 82px;
 }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-card {
+  width: 100%;
+}
+
 .contact-card h2 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #2f2f2f;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
+  line-height: 1.5;
 }
+
 .contact-card h2 span {
   margin: 0 10px;
   color: #b0b0b0;
   font-weight: 300;
 }
-.contact-card h2 {
-  font-size: 0.85rem;
-  letter-spacing: 0.22em;
+
+.contact-block + .contact-block {
+  margin-top: 10px;
 }
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+
+.contact-block p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #6f6f6f;
+  font-weight: 300;
+}
+
+.contact-prefix {
+  display: inline-block;
+  min-width: 28px;
+  color: #9a9a9a;
 }
 
 /* BRANDING */
@@ -165,10 +187,12 @@ body {
   }
 }
 
-@media (max-width: 640px) {
-  .header {
-    padding: 0 16px;
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
+}
 
   .header-logo {
     width: 115px;
