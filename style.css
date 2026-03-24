@@ -10,7 +10,7 @@
   --text: #2c2c2c;
   --muted: #666666;
   --line: rgba(0, 0, 0, 0.05);
-  --card-border: rgba(0, 0, 0, 0.05);
+  --card-border: rgba(0, 0, 0, 0.04);
   --soft-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
   --max-width: 1180px;
 }
@@ -28,10 +28,9 @@ body {
   background: var(--light);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
-/* Header */
+/* HEADER */
 .header {
   background: #0d0f0f;
   min-height: 96px;
@@ -55,7 +54,7 @@ body {
   display: block;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   width: 100%;
   height: 82vh;
@@ -65,7 +64,7 @@ body {
     url('images/hero.png') center center / cover no-repeat;
 }
 
-/* Coming */
+/* COMING SOON */
 .coming {
   background: #000;
   color: #fff;
@@ -80,7 +79,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Contacts */
+/* CONTACTOS */
 .contacts {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -89,13 +88,16 @@ body {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
 .contact-card {
-  border: 1px solid rgba(0,0,0,0.04);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.04);
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 26px;
+  padding: 38px 34px;
+  box-shadow: var(--soft-shadow);
 }
 
 .contact-card h2 {
@@ -108,37 +110,40 @@ body {
 }
 
 .contact-block + .contact-block {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(0,0,0,0.04);
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
 }
 
 .contact-block p {
-  color: #7a7a7a;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--muted);
   font-weight: 300;
 }
 
 .contact-prefix {
+  display: inline-block;
+  min-width: 24px;
   font-weight: 300;
   color: #9a9a9a;
 }
 
-/* Branding */
+/* BRANDING */
 .branding {
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 34px 20px 22px;
+  padding: 60px 20px 30px;
 }
 
 .branding-logo {
   width: 82px;
   height: auto;
-  display: block;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   background: #ffffff;
 }
@@ -153,18 +158,18 @@ body {
 .footer-copy {
   color: #9a9a9a;
   font-size: 0.85rem;
+  font-weight: 300;
   letter-spacing: 0.06em;
 }
 
-/* Responsive */
+/* RESPONSIVO */
 @media (max-width: 900px) {
   .header {
-    min-height: 96px;
     padding: 0 22px;
   }
 
   .header-logo {
-    width: 240px;
+    width: 130px;
   }
 
   .hero {
@@ -183,13 +188,11 @@ body {
 
 @media (max-width: 640px) {
   .header {
-    min-height: 84px;
     padding: 0 16px;
   }
 
   .header-logo {
-    width: 210px;
-    max-width: 78vw;
+    width: 115px;
   }
 
   .coming {
@@ -205,9 +208,9 @@ body {
     border-radius: 20px;
   }
 
-.branding {
-  padding: 60px 20px 30px;
-}
+  .branding {
+    padding: 40px 16px 20px;
+  }
 
   .branding-logo {
     width: 70px;
