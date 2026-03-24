@@ -30,18 +30,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* HEADER */
+/* Header */
 .header {
   background: #0d0f0f;
-  min-height: 110px;
-  padding: 0 34px;
+  height: 80px; /* 👈 altura correta */
+  padding: 0 40px;
   display: flex;
   align-items: center;
 }
 
 .header-inner {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1180px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -49,9 +49,12 @@ body {
 }
 
 .header-logo {
-  width: 220px;
+  width: 160px; /* 👈 aumenta o logo */
   height: auto;
   display: block;
+}
+.header {
+  padding-left: 24px;
 }
 
 /* HERO */
