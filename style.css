@@ -82,27 +82,28 @@ body {
 .contacts {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 96px 24px 82px;
+  padding: 96px 32px 82px;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
   align-items: start;
 }
 
 .contact-card {
   width: 100%;
+  max-width: 520px;
 }
 
 .contact-card h2 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #2f2f2f;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   line-height: 1.5;
 }
 
@@ -112,13 +113,17 @@ body {
   font-weight: 300;
 }
 
-.contact-block + .contact-block {
-  margin-top: 10px;
+.contact-block {
+  margin-top: 14px;
+}
+
+.contact-block:first-of-type {
+  margin-top: 0;
 }
 
 .contact-block p {
   font-size: 1rem;
-  line-height: 1.55;
+  line-height: 1.7;
   color: #6f6f6f;
   font-weight: 300;
 }
@@ -128,6 +133,7 @@ body {
   min-width: 28px;
   color: #9a9a9a;
 }
+
 /* MAP LINK */
 .map-link {
   display: inline-block;
@@ -136,8 +142,9 @@ body {
   border-radius: 999px;
   background: #0d0f0f;
   color: #ffffff;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -148,17 +155,17 @@ body {
   transform: translateY(-1px);
 }
 
-/* BOTÕES WHATSAPP */
+/* WHATSAPP */
 .whatsapp-link {
   display: inline-block;
   margin-top: 8px;
-  padding: 10px 16px;
+  padding: 10px 18px;
   border-radius: 999px;
   background-color: #25d366;
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.95rem;
   line-height: 1.2;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -216,15 +223,6 @@ body {
     min-height: 420px;
   }
 
-  .contacts {
-    padding: 78px 20px 66px;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .coming {
     padding: 64px 16px;
   }
@@ -233,9 +231,21 @@ body {
     letter-spacing: 0.13em;
   }
 
+  .contacts {
+    padding: 72px 24px 64px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
   .contact-card {
-    padding: 28px 22px;
-    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .contact-card h2 {
+    margin-bottom: 22px;
   }
 
   .branding {
@@ -248,5 +258,32 @@ body {
 
   .footer-inner {
     padding: 0 16px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts {
+    padding: 56px 20px 56px;
+  }
+
+  .contact-grid {
+    gap: 44px;
+  }
+
+  .contact-card h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    line-height: 1.6;
+  }
+
+  .contact-block p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .map-link,
+  .whatsapp-link {
+    width: fit-content;
+    max-width: 100%;
   }
 }
