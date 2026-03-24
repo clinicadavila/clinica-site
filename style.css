@@ -85,49 +85,18 @@ body {
   margin: 0 auto;
   padding: 96px 24px 82px;
 }
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.contact-card {
- background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.03);
-  border-radius: 28px;
-  padding: 42px 38px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-  transform: translateY(-4px);
-  transition: all 0.3s ease;
-}
-
 .contact-card h2 {
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.03);
-  border-radius: 28px;
-  padding: 42px 38px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  margin-bottom: 22px;
 }
-
-.contact-block + .contact-block {
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-}
-
-.contact-block p {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: var(--muted);
+.contact-card h2 span {
+  margin: 0 10px;
+  color: #b0b0b0;
   font-weight: 300;
-}
-
-.contact-prefix {
-  display: inline-block;
-  min-width: 24px;
-  font-weight: 300;
-  color: #9a9a9a;
 }
 
 /* BRANDING */
