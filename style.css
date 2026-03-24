@@ -94,11 +94,8 @@ body {
 }
 
 .contact-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
-  border-radius: 26px;
-  padding: 38px 34px;
-  box-shadow: var(--soft-shadow);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.04);
 }
 
 .contact-card h2 {
@@ -111,23 +108,19 @@ body {
 }
 
 .contact-block + .contact-block {
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,0.04);
 }
 
 .contact-block p {
-  font-size: 1rem;
+  color: #7a7a7a;
   font-weight: 300;
-  line-height: 1.9;
-  color: var(--muted);
 }
 
 .contact-prefix {
-  display: inline-block;
-  min-width: 24px;
-  font-weight: 400;
-  color: #4d4d4d;
+  font-weight: 300;
+  color: #9a9a9a;
 }
 
 /* Branding */
@@ -158,10 +151,9 @@ body {
 }
 
 .footer-copy {
-  color: #7a7a7a;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: 0.03em;
+  color: #9a9a9a;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
 }
 
 /* Responsive */
@@ -213,9 +205,9 @@ body {
     border-radius: 20px;
   }
 
-  .branding {
-    padding: 26px 16px 16px;
-  }
+.branding {
+  padding: 60px 20px 30px;
+}
 
   .branding-logo {
     width: 70px;
