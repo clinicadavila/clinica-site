@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Header */
+/* HEADER */
 .header {
   background: #0d0f0f;
   height: 130px;
@@ -43,14 +43,10 @@ body {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
 .header-logo {
   width: 210px;
-  height: auto;
-  display: block;
 }
 
 /* HERO */
@@ -59,11 +55,11 @@ body {
   height: 82vh;
   min-height: 560px;
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.14)),
+    linear-gradient(to bottom, rgba(0,0,0,0.04), rgba(0,0,0,0.14)),
     url('images/hero.png') right center / cover no-repeat;
 }
 
-/* WEBSITE COMING SOON */
+/* COMING */
 .coming {
   background: #000;
   color: #fff;
@@ -82,14 +78,13 @@ body {
 .contacts {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 96px 32px 82px;
+  padding: 96px 24px 82px;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 64px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
 .contact-card {
@@ -98,34 +93,25 @@ body {
 }
 
 .contact-card h2 {
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 0.9rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #2f2f2f;
-  margin-bottom: 28px;
-  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .contact-card h2 span {
   margin: 0 10px;
   color: #b0b0b0;
-  font-weight: 300;
 }
 
 .contact-block {
-  margin-top: 14px;
-}
-
-.contact-block:first-of-type {
-  margin-top: 0;
+  margin-top: 12px;
 }
 
 .contact-block p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #6f6f6f;
-  font-weight: 300;
 }
 
 .contact-prefix {
@@ -134,66 +120,56 @@ body {
   color: #9a9a9a;
 }
 
-/* MAP LINK */
+/* BOTÃO GOOGLE MAPS */
 .map-link {
   display: inline-block;
-  margin-top: 14px;
-  padding: 10px 18px;
+  margin-top: 10px;
+  padding: 12px 20px;
   border-radius: 999px;
   background: #0d0f0f;
-  color: #ffffff;
-  font-size: 0.78rem;
-  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .map-link:hover {
-  background: #1a1d1d;
-  transform: translateY(-1px);
+  opacity: 0.85;
 }
 
-/* WHATSAPP */
+/* BOTÃO WHATSAPP */
 .whatsapp-link {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 10px 18px;
   border-radius: 999px;
-  background-color: #25d366;
-  color: #ffffff;
+  background: #25d366;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
-  line-height: 1.2;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-size: 0.92rem;
+  transition: 0.2s ease;
 }
 
 .whatsapp-link:hover {
   transform: translateY(-1px);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 /* BRANDING */
 .branding {
-  background: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 90px 20px 40px;
 }
 
 .branding-logo {
   width: 82px;
-  height: auto;
 }
 
 /* FOOTER */
-.footer {
-  background: #ffffff;
-}
-
 .footer-inner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -204,18 +180,12 @@ body {
 .footer-copy {
   color: #9a9a9a;
   font-size: 0.85rem;
-  font-weight: 300;
-  letter-spacing: 0.06em;
 }
 
-/* RESPONSIVO */
+/* TABLET */
 @media (max-width: 900px) {
   .header {
     padding: 0 22px;
-  }
-
-  .header-logo {
-    width: 210px;
   }
 
   .hero {
@@ -223,47 +193,24 @@ body {
     min-height: 420px;
   }
 
-  .coming {
-    padding: 64px 16px;
-  }
-
-  .coming-label {
-    letter-spacing: 0.13em;
-  }
-
   .contacts {
-    padding: 72px 24px 64px;
+    padding: 78px 20px 66px;
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 56px;
+    gap: 40px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .contacts {
+    padding: 56px 20px;
   }
 
   .contact-card {
     max-width: 100%;
-  }
-
-  .contact-card h2 {
-    margin-bottom: 22px;
-  }
-
-  .branding {
-    padding: 40px 16px 20px;
-  }
-
-  .branding-logo {
-    width: 70px;
-  }
-
-  .footer-inner {
-    padding: 0 16px 24px;
-  }
-}
-
-@media (max-width: 640px) {
-  .contacts {
-    padding: 56px 20px 56px;
   }
 
   .contact-grid {
@@ -271,19 +218,28 @@ body {
   }
 
   .contact-card h2 {
-    font-size: 0.9rem;
-    letter-spacing: 0.14em;
-    line-height: 1.6;
+    font-size: 0.88rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+  }
+
+  .contact-card h2 span {
+    margin: 0 8px;
+  }
+
+  .contact-block {
+    margin-top: 14px;
   }
 
   .contact-block p {
     font-size: 0.98rem;
-    line-height: 1.65;
+    line-height: 1.7;
   }
 
   .map-link,
   .whatsapp-link {
     width: fit-content;
     max-width: 100%;
+    padding: 10px 16px;
   }
 }
